@@ -12,14 +12,89 @@
             box-sizing: border-box;
         }
 
+        body{
+            background-color:darkred;
+        }
+
         h1{
+            color: #fff;
             text-align: center;
             margin-top: 100px;
+        }
+
+        div{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        table{
+            border: 1px solid black;
+            padding:5px;
+        }
+
+        table th{
+            border:1px solid #b3adad;
+            background: #f0f0f0;
+            color: #313030;
+        }
+
+        table td{
+            border:1px solid #b3adad;
+            text-align:center;
+            padding:5px;
+            background: #ffffff;
+            color: #313030;
+        }
+
+        .second-row-3column, .second-row-4column{
+            background: blue;
+            color: white;
+        }
+
+        .third-row-4column, .fourth-row-4column{
+            background: darkgreen;
+            color: white;
         }
 
     </style>
 </head>
 <body>
     <h1>HTML Tables Homework - Ahmet Firat Kestekoğlu</h1>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>Table Heading 1</th>
+                <th>Table Heading 2</th>
+                <th>Table Heading 3</th>
+                <th>Table Heading 4</th>
+            </tr>
+            <tr>
+                <td>Table Row:1 Data:1</td>
+                <td>Table Row:1 Data:1</td>
+                <td>Table Row:1 Data:1</td>
+                <td>Table Row:1 Data:1</td>
+            </tr>
+            <tr>
+                <td>Table Row:2 Data:2</td>
+                <td>Table Row:2 Data:2</td>
+                <td colspan="2" class="second-row-3column">Table Row:2 Data:2</td>
+                <td class="second-row-4column">Table Row:2 Data:2</td>
+            </tr>
+            <tr>
+                <td>Table Row:3 Data:3</td>
+                <td>Table Row:3 Data:3</td>
+                <td>Table Row:3 Data:3</td>
+                <td rowspan="2" class="third-row-4column">Table Row:3 Data:3</td>
+            </tr>
+            <tr>
+                <td>Table Row:4 Data:4</td>
+                <td>Table Row:4 Data:4</td>
+                <td>Table Row:4 Data:4</td>
+                <td class="fourth-row-4column">Table Row:4 Data:4</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
